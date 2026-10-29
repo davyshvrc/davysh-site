@@ -290,6 +290,20 @@ def render_page(drops):
             f'\n    <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(",", ":"))}</script>\n    ')
 
 
+AVATAR_RE = re.compile(r"(^|\s)avatar$", re.I)   # subtitle "VRChat Avatar", not "Avatar Accessory"
+WORLD_RE = re.compile(r"\bworld$", re.I)          # subtitle "... World"
+
+
+def render_stats(drops):
+    """Three counts for the home about section, computed from the listed drops."""
+    avatars = sum(1 for d in drops if AVATAR_RE.search(d.get("subtitle") or ""))
+    worlds = sum(1 for d in drops if WORLD_RE.search(d.get("subtitle") or ""))
+    since = f"{CUTOFF:%B %Y}"
+    items = [(len(drops), f"Drops since {since}"), (avatars, "Avatars"), (worlds, "Worlds")]
+    li = "".join(f'<li><span class="fact-num">{n}</span><span class="fact-label">{esc(label)}</span></li>' for n, label in items)
+    return f'\n      <ul class="about-facts" aria-label="On the record">{li}</ul>\n      '
+
+
 def render_feed(drops):
     def pub(d):
         return format_datetime(dt.datetime.strptime(d["published"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc), usegmt=True)
@@ -445,6 +459,7 @@ def build(root, offline):
         data_path.write_text(text, encoding="utf-8")
 
     replace_block(root / "index.html", "home", render_home(drops))
+    replace_block(root / "index.html", "stats", render_stats(drops))
     replace_block(root / "drops" / "index.html", "page", render_page(drops))
     feed = root / "drops" / "feed.xml"
     ftext = render_feed(drops)
