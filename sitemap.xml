@@ -8,11 +8,15 @@
     <image:image><image:loc>https://davysh.com/img/card-mikael-940.webp</image:loc></image:image>
     <image:image><image:loc>https://davysh.com/img/card-velvet-621.webp</image:loc></image:image>
     <image:image><image:loc>https://davysh.com/img/card-peter-609.webp</image:loc></image:image>
-    <image:image><image:loc>https://davysh.com/img/card-ryder-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://davysh.com/img/card-deathrites-960.webp</image:loc></image:image>
     <image:image><image:loc>https://davysh.com/img/card-scarlett-960.webp</image:loc></image:image>
     <image:image><image:loc>https://davysh.com/img/scarlett-room-960.webp</image:loc></image:image>
     <image:image><image:loc>https://davysh.com/img/suite-nile-2000.webp</image:loc></image:image>
     <image:image><image:loc>https://davysh.com/og.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://davysh.com/drops/</loc>
+    <lastmod>2026-10-29</lastmod>
   </url>
   <url>
     <loc>https://davysh.com/commissions/</loc>
