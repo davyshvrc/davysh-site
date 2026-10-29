@@ -1,0 +1,13 @@
+{
+  "name": "davysh",
+  "short_name": "davysh",
+  "description": "VRChat avatar creator. Avatars, worlds and gear for VRChat.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "icons": [
+    { "src": "/brand/favicon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/brand/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
