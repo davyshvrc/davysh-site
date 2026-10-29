@@ -32,6 +32,7 @@
 <link rel="preload" as="image" type="image/avif" media="(max-width: 899.98px)" imagesrcset="img/hero-ghost-m-390.avif 390w, img/hero-ghost-m-600.avif 600w, img/hero-ghost-m-780.avif 780w" imagesizes="100vw" fetchpriority="high">
 <link rel="preload" as="image" type="image/avif" media="(min-width: 900px)" imagesrcset="img/hero-ghost-d-720.avif 720w, img/hero-ghost-d-941.avif 941w" imagesizes="50vw" fetchpriority="high">
 <link rel="preload" href="fonts/bodoni-moda-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "davysh", "url": "https://davysh.com/", "logo": "https://davysh.com/brand/favicon-180.png", "slogan": "Wanted, by design.", "description": "Avatars, worlds and gear for VRChat.", "sameAs": ["https://x.com/Davysh_VRC", "https://instagram.com/Davysh_Vrc", "https://davysh.gumroad.com", "https://payhip.com/davysh"]}</script>
@@ -49,7 +50,7 @@
       <li class="hide-xs"><a href="#lines">Lines</a></li>
       <li><a href="#cartel">Contact</a></li>
     </ul>
-    <a class="pill-cta" href="https://davysh.gumroad.com" rel="noopener">Shop</a>
+    <a class="btn btn-wine btn-sm" href="https://davysh.gumroad.com" rel="noopener">Shop</a>
   </nav>
 </header>
 
@@ -65,7 +66,8 @@
         </picture>
     </figure>
     <div class="hero-copy">
-      <h1 id="hero-title" class="hero-title"><span class="sr-only">davysh. </span><span class="ln"><span class="kw">W</span>anted,</span> <span class="ln">by design.</span></h1>
+      <h1 id="hero-title" class="hero-title"><span class="hero-sig"><img src="brand/signature.svg" width="720" height="302" alt="davysh." fetchpriority="high"></span><span class="hero-tag"><span class="ln"><span class="kw">W</span>anted,</span> <span class="ln">by design.</span></span></h1>
+      <span class="divider divider-draw" aria-hidden="true"></span>
       <p class="hero-line">Avatars, worlds and gear for VRChat. Built dark. Made to be noticed.</p>
       <div class="hero-ctas">
         <a class="btn btn-wine" href="https://davysh.gumroad.com" rel="noopener">Shop on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
@@ -82,72 +84,73 @@
   <section class="wanted" id="wanted" aria-labelledby="wanted-title">
     <div class="sec-head">
       <h2 id="wanted-title" class="sec-title">Most wanted</h2>
+      <span class="divider" aria-hidden="true"></span>
       <p class="sec-lede">The pieces people ask for by name. Every one ready to upload.</p>
     </div>
     <div class="gallery">
-      <article class="piece c-ghost">
-        <a class="piece-link" href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">
-          <div class="piece-plate"><picture><source type="image/avif" srcset="img/ghost-480.avif 480w, img/ghost-760.avif 760w, img/ghost-941.avif 941w" sizes="(min-width: 900px) 40vw, 100vw"><source type="image/webp" srcset="img/ghost-480.webp 480w, img/ghost-760.webp 760w, img/ghost-941.webp 941w" sizes="(min-width: 900px) 40vw, 100vw"><img src="img/ghost-760.webp" width="941" height="1254" alt="Ghost avatar crouched in a black hood and white mask, pointing a bloodied knife at the viewer" loading="lazy" decoding="async"></picture></div>
-          <div class="piece-body">
-            <h3 class="piece-name">Ghost</h3>
-            <p class="piece-kind">Avatar · PC</p>
-            <p class="piece-desc">Mask on. Knife out. Nobody forgets the entrance.</p>
-            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+      <article class="card c-ghost">
+        <a class="card-link" href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">
+          <div class="card-plate"><picture><source type="image/avif" srcset="img/ghost-480.avif 480w, img/ghost-760.avif 760w, img/ghost-941.avif 941w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><source type="image/webp" srcset="img/ghost-480.webp 480w, img/ghost-760.webp 760w, img/ghost-941.webp 941w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><img src="img/ghost-760.webp" width="941" height="1254" alt="Ghost avatar crouched in a black hood and white mask, pointing a bloodied knife at the viewer" loading="lazy" decoding="async"></picture><div class="badges"><span class="badge">Avatar</span></div></div>
+          <div class="card-body">
+            <h3 class="card-name">Ghost</h3>
+            <p class="card-kind">Avatar · PC</p>
+            <p class="card-desc">Mask on. Knife out. Nobody forgets the entrance.</p>
+            <span class="card-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
           </div>
         </a>
       </article>
-      <article class="piece c-mikael">
-        <a class="piece-link" href="https://davysh.gumroad.com/l/Michael" rel="noopener">
-          <div class="piece-plate"><picture><source type="image/avif" srcset="img/mikael-480.avif 480w, img/mikael-760.avif 760w, img/mikael-960.avif 960w" sizes="(min-width: 900px) 40vw, 100vw"><source type="image/webp" srcset="img/mikael-480.webp 480w, img/mikael-760.webp 760w, img/mikael-960.webp 960w" sizes="(min-width: 900px) 40vw, 100vw"><img src="img/mikael-760.webp" width="960" height="1200" alt="Mikael avatar in a black velvet tuxedo, pink shirt and bow tie against red smoke" loading="lazy" decoding="async"></picture></div>
-          <div class="piece-body">
-            <h3 class="piece-name">Mikael</h3>
-            <p class="piece-kind">Avatar</p>
-            <p class="piece-desc">Velvet tux, pink silk, dangerous manners.</p>
-            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+      <article class="card c-mikael">
+        <a class="card-link" href="https://davysh.gumroad.com/l/Michael" rel="noopener">
+          <div class="card-plate"><picture><source type="image/avif" srcset="img/card-mikael-480.avif 480w, img/card-mikael-720.avif 720w, img/card-mikael-940.avif 940w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><source type="image/webp" srcset="img/card-mikael-480.webp 480w, img/card-mikael-720.webp 720w, img/card-mikael-940.webp 940w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><img src="img/card-mikael-720.webp" width="940" height="1254" alt="Mikael avatar in a black velvet tuxedo, pink shirt and bow tie against red smoke" loading="lazy" decoding="async"></picture><div class="badges"><span class="badge">Avatar</span></div></div>
+          <div class="card-body">
+            <h3 class="card-name">Mikael</h3>
+            <p class="card-kind">Avatar</p>
+            <p class="card-desc">Velvet tux, pink silk, dangerous manners.</p>
+            <span class="card-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
           </div>
         </a>
       </article>
-      <article class="piece c-velvet">
-        <a class="piece-link" href="https://davysh.gumroad.com/l/viplounge" rel="noopener">
-          <div class="piece-plate"><picture><source type="image/avif" srcset="img/velvet-noir-640.avif 640w, img/velvet-noir-960.avif 960w, img/velvet-noir-1400.avif 1400w" sizes="(min-width: 900px) 60vw, 100vw"><source type="image/webp" srcset="img/velvet-noir-640.webp 640w, img/velvet-noir-960.webp 960w, img/velvet-noir-1400.webp 1400w" sizes="(min-width: 900px) 60vw, 100vw"><img src="img/velvet-noir-960.webp" width="1400" height="781" alt="Velvet Noir lounge set: a curved red velvet sofa, marble-topped bar and diamond-panel screens in a dark room" loading="lazy" decoding="async"></picture></div>
-          <div class="piece-body">
-            <h3 class="piece-name">Velvet Noir — VIP Lounge Pack</h3>
-            <p class="piece-kind">World furniture pack</p>
-            <p class="piece-desc">Red velvet and dark marble. Furnish the room people queue to get into.</p>
-            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+      <article class="card c-velvet">
+        <a class="card-link" href="https://davysh.gumroad.com/l/viplounge" rel="noopener">
+          <div class="card-plate"><picture><source type="image/avif" srcset="img/card-velvet-480.avif 480w, img/card-velvet-621.avif 621w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><source type="image/webp" srcset="img/card-velvet-480.webp 480w, img/card-velvet-621.webp 621w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><img src="img/card-velvet-621.webp" width="621" height="828" alt="Velvet Noir lounge set: a curved red velvet sofa under diamond-panel screens in a dark room" loading="lazy" decoding="async"></picture><div class="badges"><span class="badge">Set</span></div></div>
+          <div class="card-body">
+            <h3 class="card-name">Velvet Noir — VIP Lounge Pack</h3>
+            <p class="card-kind">World furniture pack</p>
+            <p class="card-desc">Red velvet and dark marble. Furnish the room people queue to get into.</p>
+            <span class="card-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
           </div>
         </a>
       </article>
-      <article class="piece c-peter">
-        <a class="piece-link" href="https://davysh.gumroad.com/l/Peter" rel="noopener">
-          <div class="piece-plate"><picture><source type="image/avif" srcset="img/peter-480.avif 480w, img/peter-609.avif 609w" sizes="(min-width: 900px) 30vw, 100vw"><source type="image/webp" srcset="img/peter-480.webp 480w, img/peter-609.webp 609w" sizes="(min-width: 900px) 30vw, 100vw"><img src="img/peter-609.webp" width="609" height="761" alt="Peter avatar in a black suit with a silver web emblem, one hand in his hair" loading="lazy" decoding="async"></picture></div>
-          <div class="piece-body">
-            <h3 class="piece-name">Peter</h3>
-            <p class="piece-kind">Avatar</p>
-            <p class="piece-desc">Black suit, silver web. Quiet until he isn’t.</p>
-            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+      <article class="card c-peter">
+        <a class="card-link" href="https://davysh.gumroad.com/l/Peter" rel="noopener">
+          <div class="card-plate"><picture><source type="image/avif" srcset="img/card-peter-480.avif 480w, img/card-peter-609.avif 609w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><source type="image/webp" srcset="img/card-peter-480.webp 480w, img/card-peter-609.webp 609w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><img src="img/card-peter-609.webp" width="609" height="811" alt="Peter avatar in a black suit with a silver web emblem, one hand in his hair" loading="lazy" decoding="async"></picture><div class="badges"><span class="badge">Avatar</span></div></div>
+          <div class="card-body">
+            <h3 class="card-name">Peter</h3>
+            <p class="card-kind">Avatar</p>
+            <p class="card-desc">Black suit, silver web. Quiet until he isn’t.</p>
+            <span class="card-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
           </div>
         </a>
       </article>
-      <article class="piece c-ryder">
-        <a class="piece-link" href="https://davysh.gumroad.com/l/ryder" rel="noopener">
-          <div class="piece-plate"><picture><source type="image/avif" srcset="img/ryder-480.avif 480w, img/ryder-760.avif 760w, img/ryder-960.avif 960w" sizes="(min-width: 900px) 35vw, 100vw"><source type="image/webp" srcset="img/ryder-480.webp 480w, img/ryder-760.webp 760w, img/ryder-960.webp 960w" sizes="(min-width: 900px) 35vw, 100vw"><img src="img/ryder-760.webp" width="960" height="1200" alt="Ryder avatar in a shaggy coat with rose embroidery and a red shirt, glasses low on his nose" loading="lazy" decoding="async"></picture></div>
-          <div class="piece-body">
-            <h3 class="piece-name">Ryder</h3>
-            <p class="piece-kind">Avatar</p>
-            <p class="piece-desc">Fur coat, embroidered roses, a look that walks in late.</p>
-            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+      <article class="card c-ryder">
+        <a class="card-link" href="https://davysh.gumroad.com/l/ryder" rel="noopener">
+          <div class="card-plate"><picture><source type="image/avif" srcset="img/card-ryder-480.avif 480w, img/card-ryder-720.avif 720w, img/card-ryder-960.avif 960w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><source type="image/webp" srcset="img/card-ryder-480.webp 480w, img/card-ryder-720.webp 720w, img/card-ryder-960.webp 960w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><img src="img/card-ryder-720.webp" width="960" height="1280" alt="Ryder avatar in a shaggy coat with rose embroidery and a red shirt, glasses low on his nose" loading="lazy" decoding="async"></picture><div class="badges"><span class="badge">Avatar</span></div></div>
+          <div class="card-body">
+            <h3 class="card-name">Ryder</h3>
+            <p class="card-kind">Avatar</p>
+            <p class="card-desc">Fur coat, embroidered roses, a look that walks in late.</p>
+            <span class="card-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
           </div>
         </a>
       </article>
-      <article class="piece c-scarlett">
-        <a class="piece-link" href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">
-          <div class="piece-plate"><picture><source type="image/avif" srcset="img/scarlett-640.avif 640w, img/scarlett-960.avif 960w, img/scarlett-1400.avif 1400w" sizes="(min-width: 900px) 60vw, 100vw"><source type="image/webp" srcset="img/scarlett-640.webp 640w, img/scarlett-960.webp 960w, img/scarlett-1400.webp 1400w" sizes="(min-width: 900px) 60vw, 100vw"><img src="img/scarlett-960.webp" width="1400" height="788" alt="Scarlett Room — Unholy: a round stage ringed by red booths under a pink lighting truss" loading="lazy" decoding="async"></picture></div>
-          <div class="piece-body">
-            <h3 class="piece-name">Scarlett Room — Unholy</h3>
-            <p class="piece-kind">Club world · PC</p>
-            <p class="piece-desc">Red leather, low light, a stage that runs the room. Bar, private rooms, a working dancer queue.</p>
-            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+      <article class="card c-scarlett">
+        <a class="card-link" href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">
+          <div class="card-plate"><picture><source type="image/avif" srcset="img/card-scarlett-480.avif 480w, img/card-scarlett-720.avif 720w, img/card-scarlett-960.avif 960w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><source type="image/webp" srcset="img/card-scarlett-480.webp 480w, img/card-scarlett-720.webp 720w, img/card-scarlett-960.webp 960w" sizes="(min-width: 1000px) 30vw, (min-width: 600px) 46vw, 92vw"><img src="img/card-scarlett-720.webp" width="960" height="1280" alt="Scarlett Room — Unholy: a round stage ringed by red booths under a pink lighting truss" loading="lazy" decoding="async"></picture><div class="badges"><span class="badge">World</span></div></div>
+          <div class="card-body">
+            <h3 class="card-name">Scarlett Room — Unholy</h3>
+            <p class="card-kind">Club world · PC</p>
+            <p class="card-desc">Red leather, low light, a stage that runs the room. Bar, private rooms, a working dancer queue.</p>
+            <span class="card-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
           </div>
         </a>
       </article>
@@ -159,17 +162,18 @@
       <picture class="worlds-bg"><source type="image/avif" srcset="img/scarlett-band-960.avif 960w, img/scarlett-band-1600.avif 1600w, img/scarlett-band-2000.avif 2000w" sizes="100vw"><source type="image/webp" srcset="img/scarlett-band-960.webp 960w, img/scarlett-band-1600.webp 1600w, img/scarlett-band-2000.webp 2000w" sizes="100vw"><img src="img/scarlett-band-1600.webp" width="2000" height="1125" alt="" loading="lazy" decoding="async"></picture>
       <div class="worlds-head">
         <h2 id="worlds-title" class="sec-title"><span class="kw">W</span>orlds after dark</h2>
+        <span class="divider" aria-hidden="true"></span>
         <p class="sec-lede">Clubs and suites for the hours that never make the group photo.</p>
       </div>
     </div>
     <div class="world-pair">
       <a class="world" href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">
-        <picture><source type="image/avif" srcset="img/scarlett-room-640.avif 640w, img/scarlett-room-960.avif 960w" sizes="(min-width: 900px) 45vw, 100vw"><source type="image/webp" srcset="img/scarlett-room-640.webp 640w, img/scarlett-room-960.webp 960w" sizes="(min-width: 900px) 45vw, 100vw"><img src="img/scarlett-room-960.webp" width="960" height="540" alt="Scarlett Room — Unholy: a private room lined in red tufted leather with a low booth" loading="lazy" decoding="async"></picture>
+        <span class="world-plate"><picture><source type="image/avif" srcset="img/scarlett-room-640.avif 640w, img/scarlett-room-960.avif 960w" sizes="(min-width: 760px) 45vw, 92vw"><source type="image/webp" srcset="img/scarlett-room-640.webp 640w, img/scarlett-room-960.webp 960w" sizes="(min-width: 760px) 45vw, 92vw"><img src="img/scarlett-room-960.webp" width="960" height="540" alt="Scarlett Room — Unholy: a private room lined in red tufted leather with a low booth" loading="lazy" decoding="async"></picture><span class="badges"><span class="badge">World</span></span></span>
         <span class="world-name">Scarlett Room — Unholy</span>
         <span class="world-kind">Club world. Stage, bar, private rooms.</span>
       </a>
       <a class="world" href="https://davysh.gumroad.com/l/SuiteNile" rel="noopener">
-        <picture><source type="image/avif" srcset="img/suite-nile-800.avif 800w, img/suite-nile-1200.avif 1200w, img/suite-nile-1600.avif 1600w, img/suite-nile-2000.avif 2000w" sizes="(min-width: 760px) 45vw, 100vw"><source type="image/webp" srcset="img/suite-nile-800.webp 800w, img/suite-nile-1200.webp 1200w, img/suite-nile-1600.webp 1600w, img/suite-nile-2000.webp 2000w" sizes="(min-width: 760px) 45vw, 100vw"><img src="img/suite-nile-1200.webp" width="2000" height="1125" alt="Suite Nile: a gold-lit Egyptian penthouse with a sunken lounge in the foreground, a ring-lit bed on a raised dais and hieroglyph-carved walls, city lights through the glass" loading="lazy" decoding="async"></picture>
+        <span class="world-plate"><picture><source type="image/avif" srcset="img/suite-nile-800.avif 800w, img/suite-nile-1200.avif 1200w, img/suite-nile-1600.avif 1600w, img/suite-nile-2000.avif 2000w" sizes="(min-width: 760px) 45vw, 92vw"><source type="image/webp" srcset="img/suite-nile-800.webp 800w, img/suite-nile-1200.webp 1200w, img/suite-nile-1600.webp 1600w, img/suite-nile-2000.webp 2000w" sizes="(min-width: 760px) 45vw, 92vw"><img src="img/suite-nile-1200.webp" width="2000" height="1125" alt="Suite Nile: a gold-lit Egyptian penthouse with a sunken lounge in the foreground, a ring-lit bed on a raised dais and hieroglyph-carved walls, city lights through the glass" loading="lazy" decoding="async"></picture><span class="badges"><span class="badge">World</span></span></span>
         <span class="world-name">Suite Nile</span>
         <span class="world-kind">Penthouse suite. Sunken lounge, ring-lit bed, the city through the glass.</span>
       </a>
@@ -179,23 +183,24 @@
   <section class="lines" id="lines" aria-labelledby="lines-title">
     <div class="sec-head">
       <h2 id="lines-title" class="sec-title">The lines</h2>
+      <span class="divider" aria-hidden="true"></span>
       <p class="sec-lede">Every piece, by category. Straight to the store.</p>
     </div>
     <ul class="line-list">
         <li class="line">
-          <h3 class="line-name"><span class="kw">W</span>orlds</h3>
+          <h3 class="line-name"><svg class="star" viewBox="0 0 24 26" width="14" height="15" aria-hidden="true" focusable="false"><path d="M12 2Q12.43 12.23 18.2 13 12.43 13.88 12 25.5 11.57 13.88 5.8 13 11.57 12.23 12 2Z" fill="currentColor"/></svg><span class="kw">W</span>orlds</h3>
           <ul class="line-items" aria-label="Worlds"><li><a href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">Scarlett Room — Unholy</a></li><li><a href="https://davysh.gumroad.com/l/SuiteNoire" rel="noopener">Suite Noire</a></li><li><a href="https://davysh.gumroad.com/l/SuiteNile" rel="noopener">Suite Nile</a></li><li><a href="https://davysh.gumroad.com/l/suitelumiere" rel="noopener">Suite Lumière</a></li><li><a href="https://davysh.gumroad.com/l/viplounge" rel="noopener">Velvet Noir — VIP Lounge Pack</a></li></ul>
         </li>
         <li class="line">
-          <h3 class="line-name">Avatars</h3>
+          <h3 class="line-name"><svg class="star" viewBox="0 0 24 26" width="14" height="15" aria-hidden="true" focusable="false"><path d="M12 2Q12.43 12.23 18.2 13 12.43 13.88 12 25.5 11.57 13.88 5.8 13 11.57 12.23 12 2Z" fill="currentColor"/></svg>Avatars</h3>
           <ul class="line-items" aria-label="Avatars"><li><a href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">Ghost</a></li><li><a href="https://davysh.gumroad.com/l/slasher-vrchat-avatar" rel="noopener">Slasher</a></li><li><a href="https://davysh.gumroad.com/l/Michael" rel="noopener">Mikael</a></li><li><a href="https://davysh.gumroad.com/l/Peter" rel="noopener">Peter</a></li><li><a href="https://davysh.gumroad.com/l/ryder" rel="noopener">Ryder</a></li></ul>
         </li>
         <li class="line">
-          <h3 class="line-name">Jewelry</h3>
+          <h3 class="line-name"><svg class="star" viewBox="0 0 24 26" width="14" height="15" aria-hidden="true" focusable="false"><path d="M12 2Q12.43 12.23 18.2 13 12.43 13.88 12 25.5 11.57 13.88 5.8 13 11.57 12.23 12 2Z" fill="currentColor"/></svg>Jewelry</h3>
           <ul class="line-items" aria-label="Jewelry"><li><a href="https://davysh.gumroad.com/l/JQLM" rel="noopener">Jusqu’à la Mort</a></li><li><a href="https://davysh.gumroad.com/l/COURONNE" rel="noopener">La Couronne Fanée</a></li><li><a href="https://davysh.gumroad.com/l/Tyrant" rel="noopener">Tyrant’s Thorn Diadem</a></li><li><a href="https://davysh.gumroad.com/l/GAW" rel="noopener">Gothic Alien Watch</a></li></ul>
         </li>
         <li class="line">
-          <h3 class="line-name">Accessories</h3>
+          <h3 class="line-name"><svg class="star" viewBox="0 0 24 26" width="14" height="15" aria-hidden="true" focusable="false"><path d="M12 2Q12.43 12.23 18.2 13 12.43 13.88 12 25.5 11.57 13.88 5.8 13 11.57 12.23 12 2Z" fill="currentColor"/></svg>Accessories</h3>
           <ul class="line-items" aria-label="Accessories"><li><a href="https://davysh.gumroad.com/l/MASQUENOIR" rel="noopener">Masque Noir</a></li><li><a href="https://davysh.gumroad.com/l/VIPERANOIR" rel="noopener">Vipera Noir</a></li></ul>
         </li>
     </ul>
@@ -203,37 +208,47 @@
   </section>
 
   <section class="about" id="about" aria-labelledby="about-title">
-    <h2 id="about-title" class="about-title">No noise. <br>No filler.</h2>
-    <div class="about-body">
-      <p>davysh builds for VRChat: avatars, worlds, masks and jewelry in black, white, wine and chrome.</p>
-      <p>Every piece ships ready to upload and wears like it was made for you. Just the line.</p>
+    <div class="framed">
+      <h2 id="about-title" class="about-title">No noise. <br>No filler.</h2>
+      <div class="about-body">
+        <p>davysh builds for VRChat: avatars, worlds, masks and jewelry in black, white, wine and chrome.</p>
+        <p>Every piece ships ready to upload and wears like it was made for you. Just the line.</p>
+      </div>
     </div>
   </section>
 
   <section class="cartel" id="cartel" aria-labelledby="cartel-title">
-    <h2 id="cartel-title" class="cartel-title">Follow the Cartel</h2>
-    <p class="sec-lede">The Chrome Cartel lives on Discord. Come inside. For a quick word, my DMs on X and Instagram are open.</p>
+    <div class="sec-head sec-head-center">
+      <h2 id="cartel-title" class="sec-title cartel-title">Follow the Cartel</h2>
+      <span class="divider divider-center" aria-hidden="true"></span>
+      <p class="sec-lede">The Chrome Cartel lives on Discord. Come inside. For a quick word, my DMs on X and Instagram are open.</p>
+    </div>
     <a class="cartel-join" href="https://discord.gg/SQxCcmQSXt" target="_blank" rel="noopener">
-      <svg class="pf pf-dc" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+      <span class="tile tile-lg"><svg class="pf pf-dc" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg></span>
       <span class="cj-text"><span class="cj-name">Join the Chrome Cartel</span><span class="cj-line">The Discord server. Pull up, talk shop, show your look.</span></span>
       <span class="btn btn-wine cj-btn">Join on Discord <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
     </a>
     <ul class="find-list">
-      <li><a href="https://x.com/Davysh_VRC" target="_blank" rel="me noopener"><svg class="pf pf-x" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg><span class="fl-where">X</span><span class="fl-handle">@Davysh_VRC</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
-      <li><a href="https://instagram.com/Davysh_Vrc" target="_blank" rel="me noopener"><svg class="pf pf-ig" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><defs><linearGradient id="ig-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".3" stop-color="#FA7E1E"/><stop offset=".55" stop-color="#D62976"/><stop offset=".8" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><path fill="currentColor" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg><span class="fl-where">Instagram</span><span class="fl-handle">@Davysh_Vrc</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
-      <li><a href="https://davysh.gumroad.com" target="_blank" rel="noopener"><svg class="pf pf-gr" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0Zm-.007 5.12c4.48 0 5.995 3.025 6.064 4.744h-3.239c-.069-.962-.897-2.406-2.896-2.406-2.136 0-3.514 1.857-3.514 4.126 0 2.27 1.378 4.125 3.514 4.125 1.93 0 2.758-1.512 3.103-3.025h-3.103v-1.238h6.509v6.327h-2.855v-3.989c-.207 1.444-1.102 4.264-4.617 4.264-3.516 0-5.584-2.82-5.584-6.326 0-3.645 2.276-6.602 6.618-6.602z"/></svg><span class="fl-where">Gumroad</span><span class="fl-handle">davysh.gumroad.com</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
-      <li><a href="https://payhip.com/davysh" target="_blank" rel="noopener"><svg class="pf pf-ph" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.695 0A3.696 3.696 0 0 0 0 3.695v12.92A7.384 7.384 0 0 0 7.385 24h12.92A3.696 3.696 0 0 0 24 20.305V0H3.695zm11.653 5.604a3.88 3.88 0 0 1 .166 0 3.88 3.88 0 0 1 2.677 1.132 3.88 3.88 0 0 1 0 5.48l-.36.356c-1.826-1.825-3.648-3.656-5.476-5.482l.358-.354a3.88 3.88 0 0 1 2.635-1.132zm-6.627.125a3.88 3.88 0 0 1 2.566 1c2.068 2.062 4.127 4.133 6.192 6.199l-5.481 5.482-6.19-6.203C3.549 9.7 5.346 5.702 8.722 5.729zm-1.744 1.71a.464.464 0 0 0-.465.465v1.817c0 .256.208.463.465.463h1.816a.464.464 0 0 0 .463-.463l.008-1.817A.464.464 0 0 0 8.8 7.44H6.977z"/></svg><span class="fl-where">Payhip</span><span class="fl-handle">payhip.com/davysh</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
+      <li><a href="https://x.com/Davysh_VRC" target="_blank" rel="me noopener"><span class="tile"><svg class="pf pf-x" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></span><span class="fl-where">X</span><span class="fl-handle">@Davysh_VRC</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
+      <li><a href="https://instagram.com/Davysh_Vrc" target="_blank" rel="me noopener"><span class="tile"><svg class="pf pf-ig" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span><span class="fl-where">Instagram</span><span class="fl-handle">@Davysh_Vrc</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
+      <li><a href="https://davysh.gumroad.com" target="_blank" rel="noopener"><span class="tile"><svg class="pf pf-gr" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0Zm-.007 5.12c4.48 0 5.995 3.025 6.064 4.744h-3.239c-.069-.962-.897-2.406-2.896-2.406-2.136 0-3.514 1.857-3.514 4.126 0 2.27 1.378 4.125 3.514 4.125 1.93 0 2.758-1.512 3.103-3.025h-3.103v-1.238h6.509v6.327h-2.855v-3.989c-.207 1.444-1.102 4.264-4.617 4.264-3.516 0-5.584-2.82-5.584-6.326 0-3.645 2.276-6.602 6.618-6.602z"/></svg></span><span class="fl-where">Gumroad</span><span class="fl-handle">davysh.gumroad.com</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
+      <li><a href="https://payhip.com/davysh" target="_blank" rel="noopener"><span class="tile"><svg class="pf pf-ph" viewBox="0 0 24 24" width="36" height="36" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.695 0A3.696 3.696 0 0 0 0 3.695v12.92A7.384 7.384 0 0 0 7.385 24h12.92A3.696 3.696 0 0 0 24 20.305V0H3.695zm11.653 5.604a3.88 3.88 0 0 1 .166 0 3.88 3.88 0 0 1 2.677 1.132 3.88 3.88 0 0 1 0 5.48l-.36.356c-1.826-1.825-3.648-3.656-5.476-5.482l.358-.354a3.88 3.88 0 0 1 2.635-1.132zm-6.627.125a3.88 3.88 0 0 1 2.566 1c2.068 2.062 4.127 4.133 6.192 6.199l-5.481 5.482-6.19-6.203C3.549 9.7 5.346 5.702 8.722 5.729zm-1.744 1.71a.464.464 0 0 0-.465.465v1.817c0 .256.208.463.465.463h1.816a.464.464 0 0 0 .463-.463l.008-1.817A.464.464 0 0 0 8.8 7.44H6.977z"/></svg></span><span class="fl-where">Payhip</span><span class="fl-handle">payhip.com/davysh</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
     </ul>
   </section>
 </main>
 
 <footer class="foot">
   <img class="foot-mark" src="brand/signature.svg" width="720" height="302" alt="davysh" loading="lazy" decoding="async">
-  <div class="foot-row">
-    <p>Wanted, by design.</p>
-    <a class="foot-join" href="https://discord.gg/SQxCcmQSXt" target="_blank" rel="noopener">Join the Cartel on Discord</a>
-    <p>© 2026 davysh</p>
-  </div>
+  <span class="divider divider-center" aria-hidden="true"></span>
+  <p class="foot-tag">Wanted, by design.</p>
+  <ul class="foot-links">
+    <li><a href="https://davysh.gumroad.com" rel="noopener">Gumroad</a></li>
+    <li><a href="https://payhip.com/davysh" rel="noopener">Payhip</a></li>
+    <li><a href="https://x.com/Davysh_VRC" target="_blank" rel="me noopener">X</a></li>
+    <li><a href="https://instagram.com/Davysh_Vrc" target="_blank" rel="me noopener">Instagram</a></li>
+  </ul>
+  <a class="foot-join" href="https://discord.gg/SQxCcmQSXt" target="_blank" rel="noopener">Join the Cartel on Discord</a>
+  <p class="foot-legal">© 2026 davysh</p>
 </footer>
 <script src="reveal.js" defer></script>
 </body>
