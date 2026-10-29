@@ -14,4 +14,8 @@
     <image:image><image:loc>https://davysh.com/img/suite-nile-2000.webp</image:loc></image:image>
     <image:image><image:loc>https://davysh.com/og.jpg</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://davysh.com/commissions/</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
 </urlset>
