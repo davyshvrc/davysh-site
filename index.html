@@ -3,34 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>davysh — Wanted, by design. VRChat avatars, worlds and accessories</title>
+<title>davysh — Wanted, by design. VRChat avatars, worlds and gear</title>
 <meta name="description" content="Avatars, worlds and gear for VRChat. Built dark. Made to be noticed. Shop davysh on Gumroad and Payhip.">
 <link rel="canonical" href="https://davysh.com/">
 <meta name="theme-color" content="#0A0A0A">
 <meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="davysh">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="davysh — Wanted, by design.">
-<meta property="og:description" content="VRChat avatars, worlds, accessories and jewelry. Shop on Gumroad and Payhip.">
+<meta property="og:description" content="Avatars, worlds and gear for VRChat. Built dark. Made to be noticed.">
 <meta property="og:url" content="https://davysh.com/">
 <meta property="og:image" content="https://davysh.com/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="davysh wordmark beside the Ghost VRChat avatar">
+<meta property="og:image:alt" content="davysh wordmark beside the masked Ghost VRChat avatar">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Davysh_VRC">
 <meta name="twitter:title" content="davysh — Wanted, by design.">
-<meta name="twitter:description" content="VRChat avatars, worlds, accessories and jewelry. Shop on Gumroad and Payhip.">
+<meta name="twitter:description" content="Avatars, worlds and gear for VRChat. Built dark. Made to be noticed.">
 <meta name="twitter:image" content="https://davysh.com/og.jpg">
-<meta name="twitter:image:alt" content="davysh wordmark beside the Ghost VRChat avatar">
+<meta name="twitter:image:alt" content="davysh wordmark beside the masked Ghost VRChat avatar">
 <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/brand/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/brand/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/brand/favicon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Inter:wght@400..600&display=swap">
+<link rel="preload" as="image" type="image/avif" media="(max-width: 899.98px)" imagesrcset="img/hero-ghost-m-390.avif 390w, img/hero-ghost-m-600.avif 600w, img/hero-ghost-m-780.avif 780w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" media="(min-width: 900px)" imagesrcset="img/hero-ghost-d-720.avif 720w, img/hero-ghost-d-941.avif 941w" imagesizes="50vw" fetchpriority="high">
+<link rel="preload" href="fonts/bodoni-moda-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "davysh", "url": "https://davysh.com/", "logo": "https://davysh.com/brand/favicon-180.png", "slogan": "Wanted, by design.", "description": "Avatars, worlds and gear for VRChat.", "sameAs": ["https://x.com/Davysh_VRC", "https://instagram.com/Davysh_Vrc", "https://davysh.gumroad.com", "https://payhip.com/davysh"]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -38,148 +42,193 @@
 
 <header class="bar">
   <nav class="pill" aria-label="Primary">
-    <a class="pill-mark" href="#top"><img src="brand/logo-wordmark.svg" width="96" height="36" alt="davysh, back to top"></a>
+    <a class="pill-mark" href="#top"><img src="brand/logo-wordmark.svg" width="665" height="247" alt="davysh, back to top"></a>
     <ul class="pill-links">
-      <li><a href="#wanted">Most wanted</a></li>
+      <li class="hide-sm"><a href="#wanted">Most wanted</a></li>
+      <li class="hide-sm"><a href="#worlds">Worlds</a></li>
       <li><a href="#lines">Lines</a></li>
       <li><a href="#cartel">Contact</a></li>
     </ul>
+    <a class="pill-cta" href="https://davysh.gumroad.com" rel="noopener">Shop</a>
   </nav>
 </header>
 
 <main id="main">
-  <section class="hero" id="top" aria-labelledby="wordmark">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <figure class="hero-media">
+      <picture>
+          <source media="(min-width: 900px)" type="image/avif" srcset="img/hero-ghost-d-720.avif 720w, img/hero-ghost-d-941.avif 941w" sizes="50vw">
+          <source media="(min-width: 900px)" type="image/webp" srcset="img/hero-ghost-d-720.webp 720w, img/hero-ghost-d-941.webp 941w" sizes="50vw">
+          <source type="image/avif" srcset="img/hero-ghost-m-390.avif 390w, img/hero-ghost-m-600.avif 600w, img/hero-ghost-m-780.avif 780w" sizes="100vw">
+          <source type="image/webp" srcset="img/hero-ghost-m-390.webp 390w, img/hero-ghost-m-600.webp 600w, img/hero-ghost-m-780.webp 780w" sizes="100vw">
+          <img src="img/hero-ghost-m-600.webp" width="780" height="1194" alt="Ghost avatar: a hooded figure in a white screaming mask, holding a bloodied knife to the mask’s mouth" fetchpriority="high" decoding="async">
+        </picture>
+    </figure>
     <div class="hero-copy">
-      <h1 class="wordmark" id="wordmark"><img src="brand/logo-wordmark.svg" width="665" height="247" alt="davysh"></h1>
-      <p class="tagline">Wanted, by design.</p>
+      <h1 id="hero-title" class="hero-title"><span class="sr-only">davysh. </span><span class="ln"><span class="kw">W</span>anted,</span> <span class="ln">by design.</span></h1>
       <p class="hero-line">Avatars, worlds and gear for VRChat. Built dark. Made to be noticed.</p>
-      <div class="actions">
-        <a class="btn btn-wine" href="https://davysh.gumroad.com" rel="noopener">Shop on Gumroad</a>
+      <div class="hero-ctas">
+        <a class="btn btn-wine" href="https://davysh.gumroad.com" rel="noopener">Shop on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
         <a class="btn btn-ghost" href="https://payhip.com/davysh" rel="noopener">Shop on Payhip</a>
       </div>
-    </div>
-
-    <figure class="hero-piece">
-      <svg class="chart" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path class="chart-path" pathLength="1" d="M6 330 L18 64 L120 8 L382 120 L396 360"/>
-        <g class="chart-dust"><circle cx="18" cy="64" r="2.2"/><circle cx="120" cy="8" r="1.6"/><circle cx="382" cy="120" r="2.4"/><circle cx="396" cy="360" r="1.8"/><circle cx="6" cy="330" r="2"/></g>
-      </svg>
-      <a class="hero-plate" href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">
-        <img src="img/ghost.webp" width="880" height="1100" fetchpriority="high" decoding="async"
-             alt="Ghost avatar: hooded figure in a white screaming mask, gripping a bloodied knife">
+      <a class="hero-feature" href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">
+        <span class="hf-name">Ghost</span>
+        <span class="hf-kind">VRChat avatar for PC. The mask is on. So is the knife.</span>
+        <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
       </a>
-      <figcaption class="hero-cap">
-        <a href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener"><span class="hero-cap-name">Ghost</span> <span class="hero-cap-meta">VRChat avatar, PC</span></a>
-      </figcaption>
-    </figure>
+    </div>
   </section>
 
   <section class="wanted" id="wanted" aria-labelledby="wanted-title">
-    <h2 id="wanted-title" class="section-title">Most wanted</h2>
-    <div class="wanted-grid">
-      <article class="piece piece-wide">
-        <a class="plate" href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener" aria-labelledby="t-scarlett">
-          <img src="img/scarlett-room.webp" width="1600" height="900" loading="lazy" decoding="async"
-               alt="Scarlett Room — Unholy: a private room lined in red tufted leather, a low booth under red light">
+    <div class="sec-head">
+      <h2 id="wanted-title" class="sec-title">Most wanted</h2>
+      <p class="sec-lede">The pieces people ask for by name. Every one ready to upload.</p>
+    </div>
+    <div class="gallery">
+      <article class="piece c-ghost">
+        <a class="piece-link" href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">
+          <div class="piece-plate"><picture><source type="image/avif" srcset="img/ghost-480.avif 480w, img/ghost-760.avif 760w, img/ghost-941.avif 941w" sizes="(min-width: 900px) 40vw, 100vw"><source type="image/webp" srcset="img/ghost-480.webp 480w, img/ghost-760.webp 760w, img/ghost-941.webp 941w" sizes="(min-width: 900px) 40vw, 100vw"><img src="img/ghost-760.webp" width="941" height="1254" alt="Ghost avatar crouched in a black hood and white mask, pointing a bloodied knife at the viewer" loading="lazy" decoding="async"></picture></div>
+          <div class="piece-body">
+            <h3 class="piece-name">Ghost</h3>
+            <p class="piece-kind">Avatar · PC</p>
+            <p class="piece-desc">Mask on. Knife out. Nobody forgets the entrance.</p>
+            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+          </div>
         </a>
-        <div class="piece-body">
-          <h3 id="t-scarlett" class="piece-name"><a href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">Scarlett Room — Unholy</a></h3>
-        <p class="piece-kind">Club world</p>
-        <p class="piece-desc">Red leather, low light, a stage that runs the room. Bar, private rooms, a working dancer queue.</p>
-        </div>
       </article>
-      <article class="piece piece-tall">
-        <a class="plate" href="https://davysh.gumroad.com/l/Michael" rel="noopener" aria-labelledby="t-mikael">
-          <img src="img/mikael.webp" width="720" height="900" loading="lazy" decoding="async"
-               alt="Mikael avatar: a man in a black velvet tuxedo, pink shirt and bow tie, against a red smoke backdrop">
+      <article class="piece c-mikael">
+        <a class="piece-link" href="https://davysh.gumroad.com/l/Michael" rel="noopener">
+          <div class="piece-plate"><picture><source type="image/avif" srcset="img/mikael-480.avif 480w, img/mikael-760.avif 760w, img/mikael-960.avif 960w" sizes="(min-width: 900px) 40vw, 100vw"><source type="image/webp" srcset="img/mikael-480.webp 480w, img/mikael-760.webp 760w, img/mikael-960.webp 960w" sizes="(min-width: 900px) 40vw, 100vw"><img src="img/mikael-760.webp" width="960" height="1200" alt="Mikael avatar in a black velvet tuxedo, pink shirt and bow tie against red smoke" loading="lazy" decoding="async"></picture></div>
+          <div class="piece-body">
+            <h3 class="piece-name">Mikael</h3>
+            <p class="piece-kind">Avatar</p>
+            <p class="piece-desc">Velvet tux, pink silk, dangerous manners.</p>
+            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+          </div>
         </a>
-        <div class="piece-body">
-          <h3 id="t-mikael" class="piece-name"><a href="https://davysh.gumroad.com/l/Michael" rel="noopener">Mikael</a></h3>
-        <p class="piece-kind">Avatar</p>
-        <p class="piece-desc">Velvet tux, pink silk, dangerous manners.</p>
-        </div>
       </article>
-      <article class="piece piece-tall piece-drop">
-        <a class="plate" href="https://davysh.gumroad.com/l/Peter" rel="noopener" aria-labelledby="t-peter">
-          <img src="img/peter.webp" width="480" height="600" loading="lazy" decoding="async"
-               alt="Peter avatar: a dark-haired man in a denim jacket and white tee, a camera slung at his side">
+      <article class="piece c-velvet">
+        <a class="piece-link" href="https://davysh.gumroad.com/l/viplounge" rel="noopener">
+          <div class="piece-plate"><picture><source type="image/avif" srcset="img/velvet-noir-640.avif 640w, img/velvet-noir-960.avif 960w, img/velvet-noir-1400.avif 1400w" sizes="(min-width: 900px) 60vw, 100vw"><source type="image/webp" srcset="img/velvet-noir-640.webp 640w, img/velvet-noir-960.webp 960w, img/velvet-noir-1400.webp 1400w" sizes="(min-width: 900px) 60vw, 100vw"><img src="img/velvet-noir-960.webp" width="1400" height="781" alt="Velvet Noir lounge set: a curved red velvet sofa, marble-topped bar and diamond-panel screens in a dark room" loading="lazy" decoding="async"></picture></div>
+          <div class="piece-body">
+            <h3 class="piece-name">Velvet Noir — VIP Lounge Pack</h3>
+            <p class="piece-kind">World furniture pack</p>
+            <p class="piece-desc">Red velvet and dark marble. Furnish the room people queue to get into.</p>
+            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+          </div>
         </a>
-        <div class="piece-body">
-          <h3 id="t-peter" class="piece-name"><a href="https://davysh.gumroad.com/l/Peter" rel="noopener">Peter</a></h3>
-        <p class="piece-kind">Avatar</p>
-        <p class="piece-desc">Denim jacket, camera in hand. Quiet until he isn’t.</p>
-        </div>
       </article>
+      <article class="piece c-peter">
+        <a class="piece-link" href="https://davysh.gumroad.com/l/Peter" rel="noopener">
+          <div class="piece-plate"><picture><source type="image/avif" srcset="img/peter-480.avif 480w, img/peter-609.avif 609w" sizes="(min-width: 900px) 30vw, 100vw"><source type="image/webp" srcset="img/peter-480.webp 480w, img/peter-609.webp 609w" sizes="(min-width: 900px) 30vw, 100vw"><img src="img/peter-609.webp" width="609" height="761" alt="Peter avatar in a black suit with a silver web emblem, one hand in his hair" loading="lazy" decoding="async"></picture></div>
+          <div class="piece-body">
+            <h3 class="piece-name">Peter</h3>
+            <p class="piece-kind">Avatar</p>
+            <p class="piece-desc">Black suit, silver web. Quiet until he isn’t.</p>
+            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+          </div>
+        </a>
+      </article>
+      <article class="piece c-ryder">
+        <a class="piece-link" href="https://davysh.gumroad.com/l/ryder" rel="noopener">
+          <div class="piece-plate"><picture><source type="image/avif" srcset="img/ryder-480.avif 480w, img/ryder-760.avif 760w, img/ryder-960.avif 960w" sizes="(min-width: 900px) 35vw, 100vw"><source type="image/webp" srcset="img/ryder-480.webp 480w, img/ryder-760.webp 760w, img/ryder-960.webp 960w" sizes="(min-width: 900px) 35vw, 100vw"><img src="img/ryder-760.webp" width="960" height="1200" alt="Ryder avatar in a shaggy coat with rose embroidery and a red shirt, glasses low on his nose" loading="lazy" decoding="async"></picture></div>
+          <div class="piece-body">
+            <h3 class="piece-name">Ryder</h3>
+            <p class="piece-kind">Avatar</p>
+            <p class="piece-desc">Fur coat, embroidered roses, a look that walks in late.</p>
+            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+          </div>
+        </a>
+      </article>
+      <article class="piece c-scarlett">
+        <a class="piece-link" href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">
+          <div class="piece-plate"><picture><source type="image/avif" srcset="img/scarlett-640.avif 640w, img/scarlett-960.avif 960w, img/scarlett-1400.avif 1400w" sizes="(min-width: 900px) 60vw, 100vw"><source type="image/webp" srcset="img/scarlett-640.webp 640w, img/scarlett-960.webp 960w, img/scarlett-1400.webp 1400w" sizes="(min-width: 900px) 60vw, 100vw"><img src="img/scarlett-960.webp" width="1400" height="788" alt="Scarlett Room — Unholy: a round stage ringed by red booths under a pink lighting truss" loading="lazy" decoding="async"></picture></div>
+          <div class="piece-body">
+            <h3 class="piece-name">Scarlett Room — Unholy</h3>
+            <p class="piece-kind">Club world · PC</p>
+            <p class="piece-desc">Red leather, low light, a stage that runs the room. Bar, private rooms, a working dancer queue.</p>
+            <span class="piece-cta">View on Gumroad <svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section class="worlds" id="worlds" aria-labelledby="worlds-title">
+    <div class="worlds-band">
+      <picture class="worlds-bg"><source type="image/avif" srcset="img/scarlett-band-960.avif 960w, img/scarlett-band-1600.avif 1600w, img/scarlett-band-2000.avif 2000w" sizes="100vw"><source type="image/webp" srcset="img/scarlett-band-960.webp 960w, img/scarlett-band-1600.webp 1600w, img/scarlett-band-2000.webp 2000w" sizes="100vw"><img src="img/scarlett-band-1600.webp" width="2000" height="1125" alt="" loading="lazy" decoding="async"></picture>
+      <div class="worlds-head">
+        <h2 id="worlds-title" class="sec-title"><span class="kw">W</span>orlds after dark</h2>
+        <p class="sec-lede">Clubs and suites for the hours that never make the group photo.</p>
+      </div>
+    </div>
+    <div class="world-pair">
+      <a class="world" href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">
+        <picture><source type="image/avif" srcset="img/scarlett-room-640.avif 640w, img/scarlett-room-960.avif 960w" sizes="(min-width: 900px) 45vw, 100vw"><source type="image/webp" srcset="img/scarlett-room-640.webp 640w, img/scarlett-room-960.webp 960w" sizes="(min-width: 900px) 45vw, 100vw"><img src="img/scarlett-room-960.webp" width="960" height="540" alt="Scarlett Room — Unholy: a private room lined in red tufted leather with a low booth" loading="lazy" decoding="async"></picture>
+        <span class="world-name">Scarlett Room — Unholy</span>
+        <span class="world-kind">Club world. Stage, bar, private rooms.</span>
+      </a>
+      <a class="world" href="https://davysh.gumroad.com/l/SuiteNile" rel="noopener">
+        <picture><source type="image/avif" srcset="img/suite-nile-640.avif 640w, img/suite-nile-960.avif 960w" sizes="(min-width: 900px) 45vw, 100vw"><source type="image/webp" srcset="img/suite-nile-640.webp 640w, img/suite-nile-960.webp 960w" sizes="(min-width: 900px) 45vw, 100vw"><img src="img/suite-nile-960.webp" width="960" height="540" alt="Suite Nile: a sunken lounge under ring lights, the moon behind floor-to-ceiling glass" loading="lazy" decoding="async"></picture>
+        <span class="world-name">Suite Nile</span>
+        <span class="world-kind">Penthouse suite. Sunken lounge, the moon on the glass.</span>
+      </a>
     </div>
   </section>
 
   <section class="lines" id="lines" aria-labelledby="lines-title">
-    <h2 id="lines-title" class="section-title">Lines</h2>
+    <div class="sec-head">
+      <h2 id="lines-title" class="sec-title">The lines</h2>
+      <p class="sec-lede">Every piece, by category. Straight to the store.</p>
+    </div>
     <ul class="line-list">
-      <li class="line">
-        <h3 class="line-name">Worlds</h3>
-        <ul class="line-items">
-          <li><a href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">Scarlett Room — Unholy</a></li>
-          <li><a href="https://davysh.gumroad.com/l/SuiteNoire" rel="noopener">Suite Noire</a></li>
-          <li><a href="https://davysh.gumroad.com/l/SuiteNile" rel="noopener">Suite Nile</a></li>
-          <li><a href="https://davysh.gumroad.com/l/suitelumiere" rel="noopener">Suite Lumière</a></li>
-          <li><a href="https://davysh.gumroad.com/l/viplounge" rel="noopener">Velvet Noir — VIP Lounge Pack</a></li>
-        </ul>
-      </li>
-      <li class="line">
-        <h3 class="line-name">Avatars</h3>
-        <ul class="line-items">
-          <li><a href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">Ghost</a></li>
-          <li><a href="https://davysh.gumroad.com/l/slasher-vrchat-avatar" rel="noopener">Slasher</a></li>
-          <li><a href="https://davysh.gumroad.com/l/Michael" rel="noopener">Mikael</a></li>
-          <li><a href="https://davysh.gumroad.com/l/Peter" rel="noopener">Peter</a></li>
-          <li><a href="https://davysh.gumroad.com/l/ryder" rel="noopener">Ryder</a></li>
-        </ul>
-      </li>
-      <li class="line">
-        <h3 class="line-name">Jewelry</h3>
-        <ul class="line-items">
-          <li><a href="https://davysh.gumroad.com/l/JQLM" rel="noopener">Jusqu’à la Mort</a></li>
-          <li><a href="https://davysh.gumroad.com/l/COURONNE" rel="noopener">La Couronne Fanée</a></li>
-          <li><a href="https://davysh.gumroad.com/l/Tyrant" rel="noopener">Tyrant’s Thorn Diadem</a></li>
-          <li><a href="https://davysh.gumroad.com/l/GAW" rel="noopener">Gothic Alien Watch</a></li>
-        </ul>
-      </li>
-      <li class="line">
-        <h3 class="line-name">Accessories</h3>
-        <ul class="line-items">
-          <li><a href="https://davysh.gumroad.com/l/MASQUENOIR" rel="noopener">Masque Noir</a></li>
-          <li><a href="https://davysh.gumroad.com/l/VIPERANOIR" rel="noopener">Vipera Noir</a></li>
-        </ul>
-      </li>
+        <li class="line">
+          <h3 class="line-name"><span class="kw">W</span>orlds</h3>
+          <ul class="line-items" aria-label="Worlds"><li><a href="https://davysh.gumroad.com/l/scarlettroomVRC" rel="noopener">Scarlett Room — Unholy</a></li><li><a href="https://davysh.gumroad.com/l/SuiteNoire" rel="noopener">Suite Noire</a></li><li><a href="https://davysh.gumroad.com/l/SuiteNile" rel="noopener">Suite Nile</a></li><li><a href="https://davysh.gumroad.com/l/suitelumiere" rel="noopener">Suite Lumière</a></li><li><a href="https://davysh.gumroad.com/l/viplounge" rel="noopener">Velvet Noir — VIP Lounge Pack</a></li></ul>
+        </li>
+        <li class="line">
+          <h3 class="line-name">Avatars</h3>
+          <ul class="line-items" aria-label="Avatars"><li><a href="https://davysh.gumroad.com/l/ghost-vrchat-avatar" rel="noopener">Ghost</a></li><li><a href="https://davysh.gumroad.com/l/slasher-vrchat-avatar" rel="noopener">Slasher</a></li><li><a href="https://davysh.gumroad.com/l/Michael" rel="noopener">Mikael</a></li><li><a href="https://davysh.gumroad.com/l/Peter" rel="noopener">Peter</a></li><li><a href="https://davysh.gumroad.com/l/ryder" rel="noopener">Ryder</a></li></ul>
+        </li>
+        <li class="line">
+          <h3 class="line-name">Jewelry</h3>
+          <ul class="line-items" aria-label="Jewelry"><li><a href="https://davysh.gumroad.com/l/JQLM" rel="noopener">Jusqu’à la Mort</a></li><li><a href="https://davysh.gumroad.com/l/COURONNE" rel="noopener">La Couronne Fanée</a></li><li><a href="https://davysh.gumroad.com/l/Tyrant" rel="noopener">Tyrant’s Thorn Diadem</a></li><li><a href="https://davysh.gumroad.com/l/GAW" rel="noopener">Gothic Alien Watch</a></li></ul>
+        </li>
+        <li class="line">
+          <h3 class="line-name">Accessories</h3>
+          <ul class="line-items" aria-label="Accessories"><li><a href="https://davysh.gumroad.com/l/MASQUENOIR" rel="noopener">Masque Noir</a></li><li><a href="https://davysh.gumroad.com/l/VIPERANOIR" rel="noopener">Vipera Noir</a></li></ul>
+        </li>
     </ul>
-    <p class="lines-more">Everything else lives in the stores: <a href="https://davysh.gumroad.com" rel="noopener">Gumroad</a> and <a href="https://payhip.com/davysh" rel="noopener">Payhip</a>.</p>
+    <p class="lines-more">The full catalogue lives on <a href="https://davysh.gumroad.com" rel="noopener">Gumroad</a> and <a href="https://payhip.com/davysh" rel="noopener">Payhip</a>.</p>
   </section>
 
-  <section class="about-band" id="about" aria-labelledby="about-title">
-    <img class="about-bg" src="img/scarlett-bar.webp" width="2000" height="1125" loading="lazy" decoding="async" alt="">
-    <div class="about">
-    <h2 id="about-title" class="about-title">No noise. No filler.</h2>
-    <p class="about-body">davysh builds for VRChat: avatars, worlds, masks and gear in black, white, wine and chrome. Every piece ships ready to upload and wears like it was made for you. Just the line.</p>
+  <section class="about" id="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="about-title">No noise. <br>No filler.</h2>
+    <div class="about-body">
+      <p>davysh builds for VRChat: avatars, worlds, masks and jewelry in black, white, wine and chrome.</p>
+      <p>Every piece ships ready to upload and wears like it was made for you. Just the line.</p>
     </div>
   </section>
 
   <section class="cartel" id="cartel" aria-labelledby="cartel-title">
-    <h2 id="cartel-title" class="section-title">Follow the Cartel</h2>
-    <p class="cartel-lede">Want in, or want to talk? Find me on X or Instagram. DMs are open.</p>
+    <h2 id="cartel-title" class="cartel-title">Follow the Cartel</h2>
+    <p class="sec-lede">Want in, or want to talk? Find me on X or Instagram. DMs are open.</p>
     <ul class="find-list">
-      <li><a href="https://x.com/Davysh_VRC" rel="noopener me"><span class="find-where">X</span><span class="find-handle">@Davysh_VRC</span></a></li>
-      <li><a href="https://instagram.com/Davysh_Vrc" rel="noopener me"><span class="find-where">Instagram</span><span class="find-handle">@Davysh_Vrc</span></a></li>
-      <li><a href="https://davysh.gumroad.com" rel="noopener"><span class="find-where">Gumroad</span><span class="find-handle">davysh.gumroad.com</span></a></li>
-      <li><a href="https://payhip.com/davysh" rel="noopener"><span class="find-where">Payhip</span><span class="find-handle">payhip.com/davysh</span></a></li>
+      <li><a href="https://x.com/Davysh_VRC" rel="me noopener"><span class="fl-where">X</span><span class="fl-handle">@Davysh_VRC</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
+      <li><a href="https://instagram.com/Davysh_Vrc" rel="me noopener"><span class="fl-where">Instagram</span><span class="fl-handle">@Davysh_Vrc</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
+      <li><a href="https://davysh.gumroad.com" rel="noopener"><span class="fl-where">Gumroad</span><span class="fl-handle">davysh.gumroad.com</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
+      <li><a href="https://payhip.com/davysh" rel="noopener"><span class="fl-where">Payhip</span><span class="fl-handle">payhip.com/davysh</span><svg class="ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></li>
     </ul>
   </section>
 </main>
 
 <footer class="foot">
-  <img class="foot-mark" src="brand/logo-wordmark.svg" width="120" height="45" alt="davysh">
-  <p class="foot-sign">Wanted, by design.</p>
-  <p class="foot-copy">© 2026 davysh</p>
+  <img class="foot-mark" src="brand/logo-wordmark.svg" width="665" height="247" alt="davysh" loading="lazy" decoding="async">
+  <div class="foot-row">
+    <p>Wanted, by design.</p>
+    <p>© 2026 davysh</p>
+  </div>
 </footer>
+<script src="reveal.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+(() => {
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const els = document.querySelectorAll('.sec-head, .piece, .world, .line, .about, .cartel-title, .find-list li');
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  const vh = innerHeight;
+  els.forEach((el) => { if (el.getBoundingClientRect().top > vh) { el.classList.add('rv'); io.observe(el); } });
+})();
