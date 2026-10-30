@@ -596,7 +596,6 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 .hero-alt { font-size: var(--dv-t-small); color: var(--dv-c-text-muted); }
 .hero-alt a { color: var(--dv-c-text); text-decoration-color: var(--dv-garnet); }
 .hero-alt a:hover { color: #fff; }
-.card-price { font-weight: 600; color: #fff; letter-spacing: 0; text-transform: none; }
 @media (max-width: 599.98px) {
   .gallery { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 80%; gap: var(--dv-s5);
     overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none;
