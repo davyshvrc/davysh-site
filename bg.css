@@ -3,14 +3,16 @@ html .sky { background-image: none; background-size: auto; background-repeat: no
 html .sky::before, html .sky::after { content: none; background-image: none; background-size: auto; background-repeat: no-repeat; animation: none; }
 
 /* B. Liquid chrome: a dark silk of chrome light that flows very slowly.
-   bg.js paints a tiny canvas (about 200px wide) that the browser scales up;
-   without JS, or with reduced motion, this static gradient or a single frame shows. */
+   bg.js draws the chrome ridges as sharp vector strokes on a transparent canvas
+   at full screen density; the silk and wine pool below are CSS.
+   Without JS this static gradient shows; with reduced motion, a single frame. */
 html .sky {
   background-color: #060607;
   background-image:
     radial-gradient(60% 40% at 78% 18%, rgba(200, 204, 212, .07) 0%, transparent 70%),
+    radial-gradient(40% 35% at 58% 40%, rgba(200, 204, 212, .045) 0%, transparent 72%),
     linear-gradient(152deg, transparent 30%, rgba(200, 204, 212, .05) 44%, transparent 52%, rgba(200, 204, 212, .035) 63%, transparent 72%),
-    radial-gradient(45% 40% at 8% 88%, rgba(86, 21, 35, .3) 0%, transparent 72%),
+    radial-gradient(circle max(62vw, 440px) at 8% 95%, rgba(122, 24, 40, .5) 0%, rgba(86, 21, 35, .28) 45%, transparent 100%),
     radial-gradient(130% 95% at 50% 35%, #0e0e10 0%, #070708 60%, #030304 100%);
 }
 html .sky canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.6s ease; }

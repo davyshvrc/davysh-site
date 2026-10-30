@@ -22,4 +22,17 @@
     <loc>https://davysh.com/commissions/</loc>
     <lastmod>2026-10-29</lastmod>
   </url>
+  <url>
+    <loc>https://davysh.com/ghost/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <image:image><image:loc>https://davysh.com/img/hero-ghost-d-941.webp</image:loc></image:image>
+    <image:image><image:loc>https://davysh.com/img/ghost-941.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://davysh.com/scarlett-room/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <image:image><image:loc>https://davysh.com/img/card-scarlett-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://davysh.com/img/scarlett-band-2000.webp</image:loc></image:image>
+    <image:image><image:loc>https://davysh.com/img/scarlett-room-960.webp</image:loc></image:image>
+  </url>
 </urlset>
