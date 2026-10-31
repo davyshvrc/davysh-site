@@ -672,3 +672,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 }
 .pd-shot.portrait { aspect-ratio: 4 / 5; }
 .pd-sub { display: block; font-size: .5em; letter-spacing: 0; color: var(--dv-chrome); }
+
+/* ---- 404 (moved out of an inline <style> so the CSP needs no 'unsafe-inline') ---- */
+.nf { min-height: 62vh; display: grid; place-content: center; padding-bottom: 0; }
+.nf .hero-ctas { justify-content: center; margin-top: var(--dv-s8); }

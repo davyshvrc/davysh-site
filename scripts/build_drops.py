@@ -287,7 +287,7 @@ def render_page(drops):
                               for i, d in enumerate(drops)]}
     count = f'<p class="drops-count"><strong>{len(drops)}</strong> drops on the record</p>'
     return ("\n" + f'    {count}\n' + "\n".join(blocks) +
-            f'\n    <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(",", ":"))}</script>\n    ')
+            f'\n    <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")}</script>\n    ')
 
 
 AVATAR_RE = re.compile(r"(^|\s)avatar$", re.I)   # subtitle "VRChat Avatar", not "Avatar Accessory"
