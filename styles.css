@@ -203,6 +203,14 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 .pill-links { display: flex; gap: var(--dv-s1); }
 .pill-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--dv-s4); border-radius: var(--dv-r-pill); font: italic 400 1.125rem/1 var(--dv-font-display); color: var(--dv-c-text); text-decoration: none; transition: background-color var(--dv-dur-base) ease, color var(--dv-dur-base) ease; }
 .pill-links a:hover { background: var(--dv-wash-white); color: #fff; }
+/* v3.9: a two-word link ("Most wanted") used to break onto two lines around 960px. */
+.pill-links a { white-space: nowrap; }
+@media (min-width: 900px) and (max-width: 1099.98px) {
+  .pill { padding-left: var(--dv-s5); }
+  .pill-mark img { width: 118px; }
+  .pill-links { gap: 0; }
+  .pill-links a { padding: 0 var(--dv-s3); font-size: 1.0625rem; }
+}
 
 /* ---- Hero: the signature is the motif ---- */
 .hero { position: relative; display: grid; min-height: 100svh; isolation: isolate; }
@@ -267,6 +275,9 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 .card-body { display: grid; gap: var(--dv-s2); padding: 0 var(--dv-s1); }
 .card-name { font: italic 400 var(--dv-t-h3)/1.1 var(--dv-font-display); color: var(--dv-frost); }
 .card-kind { font: 600 var(--dv-t-label)/1.3 var(--dv-font-body); letter-spacing: var(--dv-ls-label); text-transform: uppercase; color: var(--dv-chrome); }
+.card-kind { display: flex; justify-content: space-between; align-items: baseline; gap: var(--dv-s3); }
+/* v3.9: the price sits on the label row, in white, so nobody has to open the store to learn it. */
+.card-price { flex: none; color: var(--dv-frost); letter-spacing: .04em; font-variant-numeric: tabular-nums; }
 .card-desc { max-width: 44ch; color: var(--dv-c-text-muted); }
 .card-cta { display: inline-flex; align-items: center; gap: var(--dv-s2); margin-top: var(--dv-s2); font-weight: 600; font-size: .9375rem; color: var(--dv-c-text); }
 .card-link:hover .card-plate img { transform: scale(1.03); }
@@ -418,7 +429,8 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation: none !important; } }
 
 /* ---- Commissions page (v3.3) ---- */
-.pill-links a[aria-current="page"] { color: #fff; background: var(--dv-wash-white); }
+/* "page" on the sub-pages; "true" is set by the scroll-spy in reveal.js for the section being read. */
+.pill-links a[aria-current="page"], .pill-links a[aria-current="true"] { color: #fff; background: var(--dv-wash-white); }
 .cm-hero, .cm-sec { max-width: var(--dv-max); margin: 0 auto; padding: var(--dv-section) var(--dv-gutter) 0; }
 .cm-hero { display: grid; gap: var(--dv-s6); padding-top: clamp(8rem, 6rem + 6vw, 12rem); position: relative; isolation: isolate; }
 .cm-hero::before { content: ""; position: absolute; left: -10%; top: 0; width: min(900px, 90vw); height: 100%; z-index: -1; background: var(--dv-g-glow-wine); pointer-events: none; }
@@ -596,18 +608,17 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 .hero-alt { font-size: var(--dv-t-small); color: var(--dv-c-text-muted); }
 .hero-alt a { color: var(--dv-c-text); text-decoration-color: var(--dv-garnet); }
 .hero-alt a:hover { color: #fff; }
+/* v3.9: on a phone Most wanted is a two-column grid. It used to be a sideways
+   rail (80% cards, scroll-snap), which hid four of the six pieces behind a swipe. */
 @media (max-width: 599.98px) {
-  .gallery { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 80%; gap: var(--dv-s5);
-    overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none;
-    margin-inline: calc(var(--dv-gutter) * -1); padding: 0 var(--dv-gutter) var(--dv-s2); scroll-padding-inline: var(--dv-gutter); }
-  .gallery::-webkit-scrollbar { display: none; }
-  .gallery > .card { scroll-snap-align: start; }
-  /* the rail scrolls sideways, so its cards skip the scroll-in reveal */
-  html.js .gallery .rv { opacity: 1; transform: none; }
-  html.js .gallery .rv .card-plate { clip-path: none; }
-  .rail-hint { display: flex; }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--dv-s10) var(--dv-s4); }
+  .gallery .card-link { gap: var(--dv-s3); }
+  .gallery .card-name { font-size: 1.375rem; }
+  .gallery .card-kind { flex-direction: column; align-items: flex-start; gap: 2px; }   /* label, then price: same two rows on every card */
+  .gallery .card-desc { display: none; }
+  .gallery .card-cta { margin-top: 0; font-size: .875rem; }
+  .gallery .badges { flex-direction: column; align-items: flex-start; gap: var(--dv-s1); }
 }
-.rail-hint { display: none; align-items: center; gap: var(--dv-s2); margin-top: var(--dv-s5); font: 600 var(--dv-t-label)/1 var(--dv-font-body); letter-spacing: var(--dv-ls-label); text-transform: uppercase; color: var(--dv-c-text-muted); }
 
 /* ---- v3.8 product spotlight pages (/ghost/, /scarlett-room/) ---- */
 .pd { max-width: var(--dv-max); margin: 0 auto; padding: 6.5rem var(--dv-gutter) 0; display: grid; gap: var(--dv-s10); }
